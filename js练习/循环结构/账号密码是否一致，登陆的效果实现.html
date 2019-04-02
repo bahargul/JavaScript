@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登陆验证</title>
+</head>
+<body>
+    <script>
+        //提示用户输入账号
+        //提示用户输入密码
+        //如果账号和密码都不对，则一直提示用户输入
+        //账号：admin
+        //密码：123  ----字符串类型
+
+        var account =prompt("请输入账号");
+        var password =prompt("请输入密码");
+        while(account!="admin"||password!="123"){  //当表达式为真则跳出循环
+            alert("您输入的账号或密码有误，请重新输入");
+            //变量的重新赋值
+             account =prompt("请输入账号");
+             password =prompt("请输入密码");
+        }
+        console.log("登陆成功！")
+    </script>
+</body>
+</html>
